@@ -8,3 +8,6 @@ api = { path = "../api" }
 domain = { path = "../domain" }
 core = { path = "../core" }
 infra = { path = "../infra" }
+
+anyhow.workspace = true
+tokio.workspace = true
