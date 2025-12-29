@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+core = { path = "../core" }
+domain = { path = "../domain" }
+
+anyhow.workspace = true
+sqlx.workspace = true
+tracing.workspace = true

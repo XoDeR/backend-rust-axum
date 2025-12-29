@@ -1,3 +1,4 @@
+#[derive(Debug)]
 #[derive(clap::Parser)]
 pub struct AppConfig {
     #[clap(long, env)]
