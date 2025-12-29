@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    # our runnable applications
+    "crates/bin",
+    # our dependent library crates
+    "crates/api",
+    "crates/core",
+    "crates/domain",
+    "crates/infra",
+]
+resolver = "3"
+
+[profile.release]
+debug = true
