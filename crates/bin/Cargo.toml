@@ -11,3 +11,5 @@ infra = { path = "../infra" }
 
 anyhow.workspace = true
 tokio.workspace = true
+dotenv.workspace = true
+clap.workspace = true
