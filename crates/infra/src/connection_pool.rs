@@ -16,7 +16,7 @@ impl NexusConnectionManager {
             .context("error while initializing the database connection pool")?;
 
         if run_migrations {
-            info!("migrations enabled, running...");
+            //info!("migrations enabled, running...");
             sqlx::migrate!()
                 .run(&pool)
                 .await

@@ -10,8 +10,8 @@ async fn main() -> anyhow::Result<()> {
 
     println!("config: {:#?}", config);
 
-    info!("environment loaded and configuration parsed, initializing Postgres connection and running migrations...");
-    let pg_pool = NexusConnectionManagerConnectionManager::new_pool(&config.database_url, config.run_migrations)
+    //info!("environment loaded and configuration parsed, initializing Postgres connection and running migrations...");
+    let pg_pool = NexusConnectionManager::new_pool(&config.database_url, config.run_migrations)
         .await
         .expect("could not initialize the database connection pool");
     
